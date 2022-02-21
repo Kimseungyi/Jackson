@@ -2,11 +2,12 @@
 * { margin:0; padding:0; box-sizing: border-box;}
 li { list-style-type:none;}
 a { text-decoration: none;}
-body{ font-family: 'Raleway', sans-serif;}
+body{ font-family: 'Noto Sans KR', sans-serif;}
 img { max-width: 100%;}
 
-header {}
-
+header { font-family: 'Raleway', sans-serif; }
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+ vertical-align: top;}
 .navbar-collapse { flex-grow:0 ;}
 .navbar-light .navbar-nav .nav-link { color: #333;}
 .navbar-light .navbar-nav .nav-link:hover { color: #333; text-decoration: underline;}
@@ -21,7 +22,7 @@ header {}
 
 .navbar-toggler-icon {
     display: inline-block;
-    width: 2.5em;
+    width: 2.5em;   
     height: 2.5em;}
 
 .navbar-toggler:focus {
@@ -39,12 +40,14 @@ section p { font-size: 14px; line-height: 1.4; color:#333;}
 section p .bi { color:#0d6ed7; padding-right:10px;}
 section p.mt { margin-top:80px; }
 
+.s1 { font-family: 'Noto Sans KR', sans-serif; }
 section#app {}
 section#app img { width:80px; margin-bottom: 50px;}
 section#app h3 { font-size: 30px; margin-bottom: 20px;}
 section#app p { font-size: 13px; line-height: 1.6; margin-bottom: 40px;}
 section#app a { font-size: 13px; }
 
+.s4 .text-center fs-1 { font-family: 'Raleway', sans-serif; }
 .outro { padding-bottom:100px; }
 .outro h3 { font-size:32px; }
 .outro p { font-size: 16px; }
@@ -70,6 +73,7 @@ footer .sns a { display: inline-block; background:#2a2f3d; width:32px; line-heig
 @media (max-width:767px) {
     header button { transform: scale(0.7);}
     header .navbar-brand { margin-left: 10px;}
+    .bi {display: none;}
 
     .carousel-control-prev-icon, .carousel-control-next-icon {
         display: inline-block;
